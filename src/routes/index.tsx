@@ -280,7 +280,7 @@ function Outcomes() {
   const stats = [
     { v: "<60s", l: "From video to triage report" },
     { v: "On-device", l: "Runs offline in the field" },
-    { v: "3 modes", l: "Maintenance · Rehab · Fattening" },
+    { v: "2 modes", l: "Single Animal · Herd Scan" },
   ];
   return (
     <section className="relative z-10 mx-auto max-w-7xl px-6 pb-24">
