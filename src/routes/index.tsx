@@ -65,8 +65,10 @@ function Nav() {
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden">
-      <div className="grid-bg absolute inset-0 opacity-40" aria-hidden />
+    <section className="relative overflow-hidden" style={{ ["--avatar-url" as any]: `url(${avatar})` }}>
+      <div className="avatar-backdrop" aria-hidden />
+      <div className="avatar-tint" aria-hidden />
+      <div className="grid-bg absolute inset-0 opacity-30" aria-hidden />
       <div className="relative mx-auto grid max-w-7xl gap-10 px-6 pb-20 pt-10 lg:grid-cols-2 lg:items-center lg:gap-12 lg:pt-16">
         <div className="relative z-10">
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs uppercase tracking-[0.2em] text-primary">

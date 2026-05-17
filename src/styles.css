@@ -32,7 +32,7 @@
   --color-ring: var(--ring);
   --color-fog: var(--fog);
   --color-fog-soft: var(--fog-soft);
-  --font-display: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
 }
 
 :root {
@@ -91,6 +91,36 @@
   .fog-2 { background: radial-gradient(circle, oklch(0.6 0.18 165 / 0.45), transparent 70%); }
   .fog-3 { background: radial-gradient(circle, oklch(0.5 0.15 145 / 0.4), transparent 70%); }
   .fog-4 { background: radial-gradient(circle, oklch(0.7 0.16 135 / 0.35), transparent 70%); }
+  .fog-cream { background: radial-gradient(circle, oklch(0.92 0.06 85 / 0.35), transparent 70%); }
+  .fog-brown { background: radial-gradient(circle, oklch(0.45 0.08 55 / 0.45), transparent 70%); }
+  .fog-sage { background: radial-gradient(circle, oklch(0.7 0.09 145 / 0.4), transparent 70%); }
+
+  /* Avatar header backdrop: portrait fades into the page */
+  .avatar-backdrop {
+    position: absolute;
+    inset: 0;
+    background-image: var(--avatar-url);
+    background-repeat: no-repeat;
+    background-position: right -8% top -6%;
+    background-size: min(880px, 72%) auto;
+    filter: saturate(0.85) contrast(1.05);
+    opacity: 0.55;
+    mix-blend-mode: screen;
+    -webkit-mask-image:
+      radial-gradient(ellipse 70% 80% at 78% 22%, #000 0%, rgba(0,0,0,0.85) 35%, rgba(0,0,0,0.35) 65%, transparent 85%);
+            mask-image:
+      radial-gradient(ellipse 70% 80% at 78% 22%, #000 0%, rgba(0,0,0,0.85) 35%, rgba(0,0,0,0.35) 65%, transparent 85%);
+    pointer-events: none;
+  }
+  .avatar-tint {
+    position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 15%, oklch(0.92 0.06 85 / 0.18), transparent 60%),
+      radial-gradient(ellipse 55% 60% at 90% 30%, oklch(0.55 0.10 55 / 0.22), transparent 65%),
+      radial-gradient(ellipse 70% 80% at 75% 50%, oklch(0.45 0.10 150 / 0.25), transparent 70%),
+      linear-gradient(180deg, transparent 55%, var(--background) 100%);
+    mix-blend-mode: normal;
+  }
 
   @keyframes drift {
     0%, 100% { transform: translate(0,0) scale(1); }
