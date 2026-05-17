@@ -69,7 +69,7 @@ function Hero() {
       <div className="avatar-backdrop" aria-hidden />
       <div className="avatar-tint" aria-hidden />
       <div className="grid-bg absolute inset-0 opacity-30" aria-hidden />
-      <div className="relative mx-auto grid max-w-7xl gap-10 px-6 pb-20 pt-10 lg:grid-cols-2 lg:items-center lg:gap-12 lg:pt-16">
+      <div className="relative mx-auto max-w-4xl px-6 pb-20 pt-10 text-center lg:pt-16">
         <div className="relative z-10">
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs uppercase tracking-[0.2em] text-primary">
             <Sparkles className="h-3.5 w-3.5" /> AI Veterinary Intelligence
@@ -78,12 +78,12 @@ function Hero() {
             <span className="text-gradient">Bourgelat</span>
             <span className="block text-foreground/90">an AI vet for every cattle herd.</span>
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
+          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
             Bourgelat assists cattle breeders with routine health checks from a short video,
             flags disease at inception, and formulates feed rations for maintenance,
             rehabilitation and fattening — all from a phone in the field.
           </p>
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
               href="#demo"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
@@ -100,13 +100,6 @@ function Hero() {
           <p className="mt-6 text-xs uppercase tracking-[0.18em] text-muted-foreground/70">
             Currently optimized for cattle · Decision support only
           </p>
-        </div>
-
-        <div className="relative">
-          <div className="absolute -inset-8 rounded-[2.5rem] bg-gradient-to-br from-primary/20 via-transparent to-transparent blur-3xl" aria-hidden />
-          <div className="relative overflow-hidden rounded-3xl border border-border bg-card/40">
-            <img src={heroImg} alt="Portrait of Claude Bourgelat rendered in green pixels on a black canvas" className="h-full w-full object-cover" />
-          </div>
         </div>
       </div>
     </section>
