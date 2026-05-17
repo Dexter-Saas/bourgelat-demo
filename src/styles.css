@@ -32,7 +32,7 @@
   --color-ring: var(--ring);
   --color-fog: var(--fog);
   --color-fog-soft: var(--fog-soft);
-  --font-display: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
 }
 
 :root {
