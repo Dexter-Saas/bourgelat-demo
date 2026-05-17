@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ArrowRight, Camera, FileBarChart2, Wheat, Cpu, ShieldCheck, Activity, ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
 
-import heroImg from "@/assets/hero.png";
+
 import gemmaImg from "@/assets/gemma.webp";
 import avatar from "@/assets/bourgelat-avatar.png";
 import s1 from "@/assets/step-1-open.jpg";
