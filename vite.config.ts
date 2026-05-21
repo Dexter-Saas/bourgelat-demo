@@ -6,16 +6,14 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-// Redirect TanStack Start's bundled server entry to src/server.ts
 export default defineConfig({
   server: {
-    host: "0.0.0.0",
-    allowedHosts: ["bourgelat-demo-to.onrender.com"],
+    host: true,
   },
 
   preview: {
-    host: "0.0.0.0",
-    allowedHosts: ["bourgelat-demo-to.onrender.com"],
+    host: true,
+    allowedHosts: true,
   },
 
   tanstackStart: {
